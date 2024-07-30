@@ -1,0 +1,8 @@
+li {
+    padding-left: 10px;
+}
+.fruits-name {
+    display: inline-block;
+    width: 148px;
+    margin: 10px;
+}
