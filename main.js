@@ -10,7 +10,7 @@ function refershFruitList() {
         console.log(fruits[i]);
     
         htmlStringDynamic = htmlStringDynamic + '<li>' + `<span class="fruits-name">` + fruits[i] + '</span>' + 
-        `<button type="button" onclick="deleteFruits((` + i + `))" class="delete-button">Delete</button>` +  '</li>' ;
+        `<button type="button" onclick="removeFruits((` + i + `))" class="delete-button">Delete</button>` +  '</li>' ;
     }
     
     htmlStringDynamic = htmlStringDynamic + '</ol> ';
@@ -26,7 +26,7 @@ function addFruit() {
     document.getElementById("name").value = "";
 }
 
-function deleteFruits (index) {
+function removeFruits (index) {
     fruits.splice(index, 1);
     refershFruitList();
 }
